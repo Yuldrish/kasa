@@ -11,6 +11,7 @@ import Error from "./components/Error";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
+    <Header />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/À-propos-de-nous" element={<AboutUs />} />
