@@ -22,3 +22,26 @@ header {
         height: 34px;
     }
  }
+
+ .header__link {
+    padding-right: 20px;
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+    color: #FF6060;
+    text-decoration: none;
+
+    &--underline {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        padding: 0;
+    }
+ }
+
+ .linkActive {
+    text-decoration: underline;
+ }
