@@ -38,7 +38,7 @@ export default function Header() {
         <header>
             <img src={logo} alt="logo_kasa" className="header__logo" />
             <nav>
-                <Link to="/" className={className.home}>Acceuil</Link>
+                <Link to="/" className={className.home}>Accueil</Link>
                 <Link to="/À-propos-de-nous" className={className.aboutus}>À propos</Link>
             </nav>
         </header>
