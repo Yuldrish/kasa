@@ -19,5 +19,6 @@ root.render(
       <Route path="/logements" element={<Lodging />} />
       <Route path="*" element={<Error />} />
     </Routes>
+    <Footer />
   </BrowserRouter>
 );
