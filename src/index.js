@@ -7,6 +7,7 @@ import Lodging from "./pages/Lodging";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
+import "./style/sass/main.sass"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/À-propos-de-nous" element={<AboutUs />} />
       <Route path="/logements" element={<Lodging />} />
+      <Route path="*" element={<Error />} />
     </Routes>
   </BrowserRouter>
 );
