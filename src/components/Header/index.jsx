@@ -1,7 +1,20 @@
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function Header() {
+    
+    //state
+    const [className, setClassName] = useState ({
+        home: "header__link linkActive",
+        aboutus: "header__link"
+    })
+
+    const pathname = useLocation().pathname
+
+    //comportements
+    
+
     //affichage
     return (
         <header>
