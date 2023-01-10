@@ -34,9 +34,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 1240px;
+    position: relative;
+    width: 90%;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 5%;
     padding-top: 10px;
     padding-bottom: 30px;
     padding-right: 45px;
@@ -46,7 +47,6 @@
     @media (max-width: 768px) {
         width: 90%;
         margin-left: 5%;
-        margin-bottom: -400px;
-        background-color: white;
+        background: none;
     }
 }
