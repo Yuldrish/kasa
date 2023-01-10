@@ -18,7 +18,7 @@ export default function Slideshow({photosArray}) {
     }
     const nextPhoto = function (actualPhoto) {
         if (actualPhoto === lastPhoto) {
-            setActualPhoto(lastPhoto)
+            setActualPhoto(firstPhoto)
         } else {
             const actualPhotoIndex = photosArray.indexOf(actualPhoto)
             setActualPhoto(photosArray[actualPhotoIndex + 1])
