@@ -9,7 +9,6 @@ export default function Slideshow({photosArray}) {
 
     const previousPhoto = function (actualPhoto) {
         if (actualPhoto === firstPhoto) {
-            console.log(actualPhoto)
             setActualPhoto(lastPhoto)
         } else {
             const actualPhotoIndex = photosArray.indexOf(actualPhoto)
