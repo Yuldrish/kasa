@@ -2,12 +2,9 @@ import { useState } from "react";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 export default function Slideshow({photosArray}) {
-    console.log(photosArray)
     const numberOfPhotos = photosArray.length
     const firstPhoto = photosArray[0]
-    console.log(firstPhoto)
     const lastPhoto =photosArray[numberOfPhotos - 1]
-    console.log(lastPhoto)
     const [actualPhoto, setActualPhoto] = useState(firstPhoto)
 
     const previousPhoto = function (actualPhoto) {
