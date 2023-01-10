@@ -9,11 +9,10 @@
     &__collapse {
         width: 75%;
         margin: auto;
-
+    
         @media (max-width: 768px) {
             width: 85%;
             margin-top: 80px;
         }
     }
-
 }
