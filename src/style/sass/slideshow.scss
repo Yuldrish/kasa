@@ -42,7 +42,7 @@
     &__bulletpoint {
         position: absolute;
         left: 49%;
-        font-size: 48px;
+        font-size: 18px;
         bottom: 5px;
         color: white;
 
@@ -50,6 +50,12 @@
             font-size: 18px;
             bottom: 130px;
         }
+
+        @media (max-width: 425px) {
+            font-size: 0px;
+            bottom: 130px;
+        }
+
     }
 }
 
