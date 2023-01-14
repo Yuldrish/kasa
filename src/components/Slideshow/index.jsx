@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Slideshow({photosArray}) {
     const numberOfPhotos = photosArray.length
@@ -31,8 +32,8 @@ export default function Slideshow({photosArray}) {
             </div>
             {numberOfPhotos !== 1 && 
                 <div>
-                    <span className="slideshow__arrowRight arrow" onClick={() => nextPhoto(actualPhoto)}><FaAngleRight /></span>
-                    <span className="slideshow__arrowLeft arrow" onClick={() => previousPhoto(actualPhoto)}><FaAngleLeft /></span>
+                    <span className="slideshow__arrowRight arrow" onClick={() => nextPhoto(actualPhoto)}><FontAwesomeIcon icon={faAngleRight} /></span>
+                    <span className="slideshow__arrowLeft arrow" onClick={() => previousPhoto(actualPhoto)}><FontAwesomeIcon icon={faAngleLeft} /></span>
                     <div className="slideshow__bulletpoint">
                         {photosArray.indexOf(actualPhoto) + 1}/{numberOfPhotos}
                     </div>
