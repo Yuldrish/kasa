@@ -11,6 +11,7 @@
 
         @media (max-width: 768px) {
             margin-top: -110px;
+            flex-direction: column;
         }
 
         &__lodging {
@@ -23,7 +24,6 @@
                 padding-bottom: 15px;
 
                 @media (max-width: 768px) {
-                    width: 335px;
                     font-size: 18px;
                 }
             }
@@ -79,14 +79,13 @@
 
             @media (max-width: 768px) {
                 flex-direction: row-reverse;
-                margin-top: 130px;
-                margin-left: -350px;
             }
 
 
             &__host {
                 display: flex;
                 align-items: center;
+                margin-right: -30px;
 
 
                 &__name {
@@ -96,7 +95,6 @@
                     @media (max-width: 768px) {
                         width: 50%;
                         font-size: 12px;
-                        margin-left: 35px;
                         text-align: right;
                     }
                 }
