@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Rating({ rate }) {
     const rateMax = 5
@@ -7,10 +5,10 @@ export default function Rating({ rate }) {
     const numberOfGreyStars = rateMax - numberOfColoredStars
     let starsArray = []
     for (let i = 0; i < numberOfColoredStars; i++) {
-        starsArray.push(<div className="rating__coloredStar"><FontAwesomeIcon icon={faStar} /></div>)
+        starsArray.push(<div className="rating__coloredStar">★</div>)
     }
     for (let i = 0; i < numberOfGreyStars; i++) {
-        starsArray.push(<div className="rating__greyStar"><FontAwesomeIcon icon={faStar} /></div>)
+        starsArray.push(<div className="rating__greyStar">★</div>)
     }
     return (
         <div className="rating">
