@@ -31,12 +31,14 @@
     &__arrowLeft {
         position: absolute;
         left: 5px;
+        transform: rotate(-90deg);
 
     }
 
     &__arrowRight {
         position: absolute;
         right: 5px;
+        transform: rotate(90deg);
     }
 
     &__bulletpoint {
