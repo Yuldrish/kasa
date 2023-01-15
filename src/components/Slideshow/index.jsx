@@ -1,5 +1,4 @@
 import { useState } from "react";
-import arrow from "../../assets/img/arrow.svg"
 
 export default function Slideshow({photosArray}) {
     const numberOfPhotos = photosArray.length
@@ -31,8 +30,8 @@ export default function Slideshow({photosArray}) {
             </div>
             {numberOfPhotos !== 1 && 
                 <div>
-                    <span className="slideshow__arrowRight arrow  arrow__right" onClick={() => nextPhoto(actualPhoto)}><img src={arrow} alt="fleche vers le bas" /></span>
-                    <span className="slideshow__arrowLeft arrow  arrow__left" onClick={() => previousPhoto(actualPhoto)}><img src={arrow} alt="fleche vers le bas" /></span>
+                    <span className="slideshow__arrowRight arrow  arrow__right" onClick={() => nextPhoto(actualPhoto)}>〱</span>
+                    <span className="slideshow__arrowLeft arrow  arrow__left" onClick={() => previousPhoto(actualPhoto)}>〱</span>
                     <div className="slideshow__bulletpoint">
                         {photosArray.indexOf(actualPhoto) + 1}/{numberOfPhotos}
                     </div>
